@@ -44,7 +44,7 @@ export const Project = () => {
               style={{ flex: "1 1 calc(20% - 1.2rem)" }}
             >
               <img
-                src={project.imageUrl}
+                src={project.image}
                 alt={project.title}
                 className="w-24 h-24 object-cover mb-4 rounded"
               />

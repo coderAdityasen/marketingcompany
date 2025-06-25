@@ -43,7 +43,7 @@ export const Client = () => {
               className="bg-white shadow-md p-6 rounded-lg w-full sm:w-[45%] md:w-[30%] transition hover:shadow-xl"
             >
               <img
-                src={client.imageUrl}
+                src={client.image}
                 alt={client.name}
                 className="w-16 h-16 rounded-full mx-auto mb-4"
               />

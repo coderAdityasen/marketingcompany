@@ -1,6 +1,12 @@
 Full Stack Internship Project
 This repository contains a full-stack web application with a backend built using Node.js, Express, and MongoDB, and a frontend using React, Vite, and Tailwind CSS. The project is modular, scalable, and ready for further development.
 
+## admin panel
+`https://marketingcompany-eosin.vercel.app/admin`
+ -visit this site and login with 
+email - admin@example.com
+pass -  Admin@123
+
 Table of Contents
 Project Structure
 Backend
@@ -84,7 +90,7 @@ Copy .env and fill in your MongoDB URI, JWT secrets, and Cloudinary credentials.
 npm run dev
 
 
-The backend runs on http://localhost:8000 by default.
+The backend runs on render.
 
 Frontend
 Tech Stack (Frontend)

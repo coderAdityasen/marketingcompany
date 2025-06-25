@@ -47,11 +47,11 @@ export const Client = () => {
                 alt={client.name}
                 className="w-16 h-16 rounded-full mx-auto mb-4"
               />
-              <p className="text-gray-700 mb-2">"{client.review}"</p>
+              <p className="text-gray-700 mb-2">"{client.description}"</p>
               <h5 className="font-bold text-blue-500">{client.name}</h5>
-              <p className="text-sm text-gray-500">{client.location}</p>
+              <p className="text-sm text-gray-500">{client.designation}</p>
               <p className="text-yellow-400 text-xl mt-2">
-                {"⭐".repeat(client.rating)}
+                ⭐⭐⭐⭐⭐
               </p>
             </div>
           ))}

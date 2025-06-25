@@ -7,7 +7,7 @@ const app = express()
 
 app.use(
 	cors({
-		origin:"*",
+		origin:"https://marketingcompany-eosin.vercel.app",
 	  credentials: true,
 	})
   );

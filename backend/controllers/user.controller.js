@@ -75,7 +75,7 @@ export const login = async (req, resp) => {
 
     const options = {
       httpOnly: true,
-      secure: false
+      secure: true
   }
 
   console.log("complete");

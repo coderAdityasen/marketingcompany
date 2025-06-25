@@ -4,7 +4,7 @@ import  adminverifyjwt  from "../middleware/AdmiVerify.middileware.js";
 
 const subscriberroute = Router()
 
-subscriberroute.route("/getallsubscriber").get(adminverifyjwt ,getAllSubscribers);
+subscriberroute.route("/getallsubscriber").get(getAllSubscribers);
 subscriberroute.route("/addsubscriber").post( addSubscriber);
 
 export default subscriberroute;

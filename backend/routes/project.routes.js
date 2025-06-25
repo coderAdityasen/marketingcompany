@@ -5,6 +5,6 @@ import  adminverifyjwt  from "../middleware/AdmiVerify.middileware.js";
 const projectroute = Router()
 
 projectroute.route("/getallproject").get(getAllProjects);
-projectroute.route("/addproject").post( adminverifyjwt ,addProject);
+projectroute.route("/addproject").post(addProject);
 
 export default projectroute;

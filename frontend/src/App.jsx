@@ -1,23 +1,25 @@
-import React from "react"
+import { Navbar } from "./components/navbar";
+import { LandingPage } from "./pages/landingPage";
 import { BrowserRouter, Routes, Route, Navigate  } from "react-router-dom";
-import Home from "./Home";
-import AdminLogin from "./components/Login";
-import Navbar from "./components/navbar";
+import { useSelector } from "react-redux";
+import Login from "./components/Login";
+import Dashboard from "./components/dashboard";
 
-function App() {
-
+export const App = () => { 
+  const existedUser = useSelector((state) => state);
+  console.log(existedUser);
   return (
-   <>
-    <BrowserRouter>
-    <Navbar/>
+    <>
+      <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<AdminLogin />} />
+        <Route path="/" element={<LandingPage/>} />
+        <Route path="/admin" element={<Login/>} />
+        {existedUser.isadmin? (
+          <Route path="/dashboard" element={<Dashboard/>}/>
+        ) : null}
       </Routes>
-
       </BrowserRouter>
-   </>
-  )
-}
 
-export default App
+    </>
+  );
+};

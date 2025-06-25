@@ -4,7 +4,7 @@ import  adminverifyjwt  from "../middleware/AdmiVerify.middileware.js";
 
 const clientroute = Router()
 
-clientroute.route("/getallclient").get(adminverifyjwt , getAllClients);
-clientroute.route("/addclient").post(adminverifyjwt , addClient);
+clientroute.route("/getallclient").get( getAllClients);
+clientroute.route("/addclient").post( addClient);
 
 export default clientroute;
